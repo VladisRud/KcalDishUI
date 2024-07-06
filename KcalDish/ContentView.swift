@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            TabView {
+                StartView()
+                    .tabItem {
+                        Image(systemName: "fork.knife")
+                        Text("Calculator")
+                    }
+                CookBookView(dishList: DataStore.shared.dishList)
+                    .tabItem {
+                        Image(systemName: "text.book.closed.fill")
+                        Text("Cook Book")
+                    }
+            }
+            .padding()
+            .navigationTitle("Kcal in Dish")
         }
-        .padding()
     }
 }
 

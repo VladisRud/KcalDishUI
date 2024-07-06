@@ -11,6 +11,11 @@
 		5837CD492C3831400090B0AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5837CD482C3831400090B0AC /* ContentView.swift */; };
 		5837CD4B2C3831400090B0AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5837CD4A2C3831400090B0AC /* Assets.xcassets */; };
 		5837CD4E2C3831400090B0AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5837CD4D2C3831400090B0AC /* Preview Assets.xcassets */; };
+		5837CD552C39295A0090B0AC /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5837CD542C39295A0090B0AC /* Nutrition.swift */; };
+		5837CD572C3940FC0090B0AC /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5837CD562C3940FC0090B0AC /* DataStore.swift */; };
+		5837CD592C39464C0090B0AC /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5837CD582C39464C0090B0AC /* StartView.swift */; };
+		5837CD5B2C39466E0090B0AC /* CookBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5837CD5A2C39466E0090B0AC /* CookBookView.swift */; };
+		5837CD5D2C394C000090B0AC /* DishInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5837CD5C2C394C000090B0AC /* DishInformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		5837CD482C3831400090B0AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5837CD4A2C3831400090B0AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5837CD4D2C3831400090B0AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5837CD542C39295A0090B0AC /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
+		5837CD562C3940FC0090B0AC /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		5837CD582C39464C0090B0AC /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		5837CD5A2C39466E0090B0AC /* CookBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBookView.swift; sourceTree = "<group>"; };
+		5837CD5C2C394C000090B0AC /* DishInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishInformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				5837CD462C3831400090B0AC /* KcalDishApp.swift */,
 				5837CD482C3831400090B0AC /* ContentView.swift */,
+				5837CD582C39464C0090B0AC /* StartView.swift */,
+				5837CD5A2C39466E0090B0AC /* CookBookView.swift */,
+				5837CD5C2C394C000090B0AC /* DishInformationView.swift */,
+				5837CD542C39295A0090B0AC /* Nutrition.swift */,
+				5837CD562C3940FC0090B0AC /* DataStore.swift */,
 				5837CD4A2C3831400090B0AC /* Assets.xcassets */,
 				5837CD4C2C3831400090B0AC /* Preview Content */,
 			);
@@ -138,7 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5837CD492C3831400090B0AC /* ContentView.swift in Sources */,
+				5837CD592C39464C0090B0AC /* StartView.swift in Sources */,
+				5837CD572C3940FC0090B0AC /* DataStore.swift in Sources */,
+				5837CD5D2C394C000090B0AC /* DishInformationView.swift in Sources */,
+				5837CD5B2C39466E0090B0AC /* CookBookView.swift in Sources */,
 				5837CD472C3831400090B0AC /* KcalDishApp.swift in Sources */,
+				5837CD552C39295A0090B0AC /* Nutrition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
