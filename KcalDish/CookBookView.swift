@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct CookBookView: View {
-    let dishList: [Nutrition]
+    @EnvironmentObject var dishList: DataStore
+    @EnvironmentObject var dishManager: DishManager
+    private let storageManager = StorageManager.shared
     
     var body: some View {
-        List(dishList) { dish in
+        List(storageManager.fetchUser()) { dish in
             NavigationLink(destination: DishInformationView(disn: dish)) {
                 Text(dish.dishName)
             }
@@ -20,5 +22,6 @@ struct CookBookView: View {
 }
 
 #Preview {
-    CookBookView(dishList: DataStore.shared.dishList)
+    CookBookView()
+        .environmentObject(DishManager())
 }

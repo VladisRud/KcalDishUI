@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct KcalDishApp: App {
+    @StateObject private var dishManager = DishManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(dishManager)
         }
     }
 }

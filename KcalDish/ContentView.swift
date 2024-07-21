@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    
     var body: some View {
         NavigationStack {
             TabView {
@@ -17,18 +18,20 @@ struct ContentView: View {
                         Image(systemName: "fork.knife")
                         Text("Calculator")
                     }
-                CookBookView(dishList: DataStore.shared.dishList)
+                CookBookView()
                     .tabItem {
                         Image(systemName: "text.book.closed.fill")
                         Text("Cook Book")
                     }
+                
+                    .padding()
+                    .navigationTitle("Kcal in Dish")
             }
-            .padding()
-            .navigationTitle("Kcal in Dish")
         }
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(DishManager())
 }

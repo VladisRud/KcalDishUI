@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DishInformationView: View {
     
-    let disn: Nutrition
+    let disn: Dish
     
     var body: some View {
         HStack {
@@ -53,5 +53,5 @@ struct DishInformationView: View {
 }
 
 #Preview {
-    DishInformationView(disn: DataStore.shared.dishList[2])
+    DishInformationView(disn: DataStore().dishList[0])
 }
